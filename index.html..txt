@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cloud Engineering Resume</title>
+</head>
+<body>
+    <h1>My Name</h1>
+    <p>Freshman College Student | Tampa, FL</p>
+    <h2>Career Goals</h2>
+    <p>Future Enterprise Cloud and Leadership Executive.</p>
+</body>
+</html>
