@@ -33,9 +33,7 @@
                 getVisitCount();
             });
 
-            function getVisitCount() {
-                // PASTE YOUR COPIED AZURE FUNCTION URL INSIDE THESE QUOTES
-                let apiURL = 'https://resume-js-api-karina2026-c3fwhfcphrhhevee.canadacentral-01.azurewebsites.net/api/GetResumeCounter?code=rR4vUdoH0aOZQu6t7OjnqA69dSoG6oloYvpQ4oxkESq6AzFumpF98w=='; 
+            function getVisitCount()'https://resume-js-api-karina2026-c3fwhfcphrhhevee.canadacentral-01.azurewebsites.net/api/GetResumeCounter?code=rR4vUdoH0aOZQu6t7OjnqA69dSoG6oloYvpQ4oxkESq6AzFumpF98w=='; 
                 
                 fetch(apiURL)
                     .then(response => response.json())
