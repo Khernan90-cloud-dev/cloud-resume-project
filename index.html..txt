@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html>
+
 <head>
+    <meta charset="UTF-8">
     <title>My Cloud Engineering Resume</title>
+    <!-- This line links your HTML to your upcoming CSS styling -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My Name</h1>
-    <p>Freshman College Student | Tampa, FL</p>
-    <h2>Career Goals</h2>
-    <p>Future Enterprise Cloud and Leadership Executive.</p>
+    <div class="container">
+        <header>
+            <h1>Your Name</h1>
+            <p class="subtitle">Aspiring Cloud Engineer | Tampa, FL</p>
+        </header>
+        
+        <section class="card">
+            <h2>Education</h2>
+            <p><strong>University of South Florida</strong> — Freshman Student</p>
+            <p>Focus: Cloud Computing Infrastructure & Leadership</p>
+        </section>
+
+        <section class="card">
+            <h2>Technical Projects</h2>
+            <p><strong>Cloud-Native Resume Pipeline:</strong> Developed and deployed a static web infrastructure hosted globally utilizing Git automation and edge infrastructure architectures.</p>
+        </section>
+    </div>
 </body>
 </html>
