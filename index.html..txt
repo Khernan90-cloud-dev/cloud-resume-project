@@ -23,5 +23,28 @@
             <p><strong>Cloud-Native Resume Pipeline:</strong> Developed and deployed a static web infrastructure hosted globally utilizing Git automation and edge infrastructure architectures.</p>
         </section>
     </div>
+        <p id="counter-text" style="text-align: center; font-weight: bold; margin-top: 30px;">
+            Loading visitor count...
+        </p>
+
+        <!-- This script reaches out to Azure to fetch the number -->
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                getVisitCount();
+            });
+
+            function getVisitCount() {
+                // PASTE YOUR COPIED AZURE FUNCTION URL INSIDE THESE QUOTES
+                let apiURL = 'https://resume-js-api-karina2026-c3fwhfcphrhhevee.canadacentral-01.azurewebsites.net/api/GetResumeCounter?code=rR4vUdoH0aOZQu6t7OjnqA69dSoG6oloYvpQ4oxkESq6AzFumpF98w=='; 
+                
+                fetch(apiURL)
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById("counter-text").innerText = `You are visitor number: ${data.count}!`;
+                    })
+                    .catch(error => console.log('Error fetching counter:', error));
+            }
+        </script>
+
 </body>
 </html>
